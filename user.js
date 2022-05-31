@@ -63,7 +63,7 @@ user_pref("dom.mozTCPSocket.enabled",				false);
 // http://kb.mozillazine.org/Dom.storage.enabled
 // https://html.spec.whatwg.org/multipage/webstorage.html
 // NOTICE-DISABLED: Disabling DOM storage is known to cause`TypeError: localStorage is null` errors
-//user_pref("dom.storage.enabled",		false);
+user_pref("dom.storage.enabled",		false);
 
 // PREF: Disable leaking network/browser connection information via Javascript
 // Network Information API provides general information about the system's connection type (WiFi, cellular, etc.)
@@ -148,7 +148,7 @@ user_pref("browser.send_pings.require_same_host",		true);
 // http://forums.mozillazine.org/viewtopic.php?p=13842047
 // https://github.com/pyllyukko/user.js/issues/8
 // NOTICE-DISABLED: IndexedDB could be used for tracking purposes, but is required for some add-ons to work (notably uBlock), so is left enabled
-//user_pref("dom.indexedDB.enabled",		false);
+user_pref("dom.indexedDB.enabled",		false);
 
 // TODO: "Access Your Location" "Maintain Offline Storage" "Show Notifications"
 
@@ -187,7 +187,7 @@ user_pref("webgl.disable-fail-if-major-performance-caveat",	true);
 // https://developer.mozilla.org/en-US/docs/Web/API/WEBGL_debug_renderer_info
 user_pref("webgl.enable-debug-renderer-info",			false);
 // somewhat related...
-//user_pref("pdfjs.enableWebGL",					false);
+user_pref("pdfjs.enableWebGL",					false);
 
 // PREF: Spoof dual-core CPU
 // https://trac.torproject.org/projects/tor/ticket/21675
@@ -307,7 +307,7 @@ user_pref("gfx.font_rendering.opentype_svg.enabled",		false);
 // NOTICE-DISABLED: Disabling SVG support breaks many UI elements on many sites
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1216893
 // https://github.com/iSECPartners/publications/raw/master/reports/Tor%20Browser%20Bundle/Tor%20Browser%20Bundle%20-%20iSEC%20Deliverable%201.3.pdf#16
-//user_pref("svg.disabled", true);
+user_pref("svg.disabled", true);
 
 
 // PREF: Disable video stats to reduce fingerprinting threat
@@ -375,7 +375,7 @@ user_pref("security.dialog_enable_delay",			1000);
 
 // PREF: Require signatures
 // https://wiki.mozilla.org/Addons/Extension_Signing
-//user_pref("xpinstall.signatures.required",		true);
+user_pref("xpinstall.signatures.required",		true);
 
 // PREF: Opt-out of add-on metadata updates
 // https://blog.mozilla.org/addons/how-to-opt-out-of-add-on-metadata-updates/
@@ -639,7 +639,7 @@ user_pref("browser.newtabpage.activity-stream.feeds.section.topstories",	false);
 // https://github.com/pyllyukko/user.js/issues/387
 // http://kb.mozillazine.org/Network.http.keep-alive.timeout
 // https://httpd.apache.org/docs/current/mod/core.html#keepalivetimeout
-//user_pref("network.http.keep-alive.timeout",			15);
+user_pref("network.http.keep-alive.timeout",			15);
 
 // PREF: Disable prefetching of <link rel="next"> URLs
 // http://kb.mozillazine.org/Network.prefetch-next
@@ -710,7 +710,7 @@ user_pref("network.captive-portal-service.enabled",		false);
 // https://bugzilla.mozilla.org/show_bug.cgi?id=828183
 user_pref("network.negotiate-auth.allow-insecure-ntlm-v1",	false);
 // it is still allowed through HTTPS. uncomment the following to disable it completely.
-//user_pref("network.negotiate-auth.allow-insecure-ntlm-v1-https",		false);
+user_pref("network.negotiate-auth.allow-insecure-ntlm-v1-https",		false);
 
 // PREF: Enable CSP 1.1 script-nonce directive support
 // https://bugzilla.mozilla.org/show_bug.cgi?id=855326
@@ -732,7 +732,7 @@ user_pref("security.sri.enable",				true);
 // https://dnt-dashboard.mozilla.org
 // https://github.com/pyllyukko/user.js/issues/11
 // NOTICE: Do No Track must be enabled manually
-//user_pref("privacy.donottrackheader.enabled",		true);
+user_pref("privacy.donottrackheader.enabled",		true);
 
 // PREF: Send a referer header with the target URI as the source (disabled)
 // https://bugzilla.mozilla.org/show_bug.cgi?id=822869
@@ -741,7 +741,7 @@ user_pref("security.sri.enable",				true);
 // NOTICE-DISABLED: Spoofing referers breaks visualisation of 3rd-party sites on the Lightbeam addon
 // NOTICE-DISABLED: Spoofing referers disables CSRF protection on some login pages not implementing origin-header/cookie+token based CSRF protection
 // TODO: https://github.com/pyllyukko/user.js/issues/94, commented-out XOriginPolicy/XOriginTrimmingPolicy = 2 prefs
-//user_pref("network.http.referer.spoofSource",			true);
+user_pref("network.http.referer.spoofSource",			true);
 
 // PREF: Don't send referer headers when following links across different domains
 // https://github.com/pyllyukko/user.js/issues/227
@@ -770,11 +770,11 @@ user_pref("privacy.firstparty.isolate",				true);
 user_pref("network.cookie.thirdparty.sessionOnly",		true);
 
 // PREF: Spoof User-agent (disabled)
-//user_pref("general.useragent.override",				"Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0");
-//user_pref("general.appname.override",				"Netscape");
-//user_pref("general.appversion.override",			"5.0 (Windows)");
-//user_pref("general.platform.override",				"Win32");
-//user_pref("general.oscpu.override",				"Windows NT 6.1");
+user_pref("general.useragent.override",				"Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0");
+user_pref("general.appname.override",				"Netscape");
+user_pref("general.appversion.override",			"5.0 (Windows)");
+user_pref("general.platform.override",				"Win32");
+user_pref("general.oscpu.override",				"Windows NT 6.1");
 
 /*******************************************************************************
  * SECTION: Caching                                                            *
@@ -830,7 +830,7 @@ user_pref("browser.cache.disk.enable",				false);
 
 // PREF: Disable memory cache (disabled)
 // http://kb.mozillazine.org/Browser.cache.memory.enable
-//user_pref("browser.cache.memory.enable",		false);
+user_pref("browser.cache.memory.enable",		false);
 
 // PREF: Disable Caching of SSL Pages
 // CIS Version 1.2.0 October 21st, 2011 2.5.8
@@ -873,7 +873,7 @@ user_pref("security.insecure_field_warning.contextual.enabled", true);
 // https://bugzilla.mozilla.org/show_bug.cgi?id=956906
 // OWASP ASVS V9.1
 // Does not prevent any kind of auto-completion (see browser.formfill.enable, signon.autofillForms)
-//user_pref("signon.storeWhenAutocompleteOff",			false);
+user_pref("signon.storeWhenAutocompleteOff",			false);
 
 // PREF: Delete Search and Form History
 // CIS Version 1.2.0 October 21st, 2011 2.5.6
@@ -926,14 +926,14 @@ user_pref("browser.chrome.site_icons",				false);
 user_pref("security.insecure_password.ui.enabled",		true);
 
 // PREF: Disable right-click menu manipulation via JavaScript (disabled)
-//user_pref("dom.event.contextmenu.enabled",		false);
+// user_pref("dom.event.contextmenu.enabled",		false);
 
 // PREF: Disable "Are you sure you want to leave this page?" popups on page close
 // https://support.mozilla.org/en-US/questions/1043508
 // NOTICE: disabling "beforeunload" events may lead to losing data entered in web forms
 // Does not prevent JS leaks of the page close event.
 // https://developer.mozilla.org/en-US/docs/Web/Events/beforeunload
-//user_pref("dom.disable_beforeunload",    true);
+user_pref("dom.disable_beforeunload",    true);
 
 // PREF: Disable Downloading on Desktop
 // CIS 2.3.2
@@ -1106,7 +1106,7 @@ user_pref("security.ssl.treat_unsafe_negotiation_as_broken",	true);
 // https://wiki.mozilla.org/Security:Renegotiation#security.ssl.require_safe_negotiation
 // https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3555
 // TODO: `security.ssl.require_safe_negotiation` is more secure but makes browsing next to impossible (2012-2014-... - `ssl_error_unsafe_negotiation` errors), so is left disabled
-//user_pref("security.ssl.require_safe_negotiation",		true);
+user_pref("security.ssl.require_safe_negotiation",		true);
 
 // PREF: Disable automatic reporting of TLS connection errors
 // https://support.mozilla.org/en-US/kb/certificate-pinning-reports
@@ -1217,7 +1217,7 @@ user_pref("security.ssl3.dhe_dss_camellia_128_sha",		false);
 user_pref("security.ssl3.dhe_dss_camellia_256_sha",		false);
 
 // PREF: Ciphers with CBC & SHA-1 (disabled)
-//user_pref("security.ssl3.rsa_aes_256_sha",			false); // 0x35
-//user_pref("security.ssl3.rsa_aes_128_sha",			false); // 0x2f
-//user_pref("security.ssl3.ecdhe_rsa_aes_256_sha",		false); // 0xc014
-//user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha",		false); // 0xc00a
+user_pref("security.ssl3.rsa_aes_256_sha",			false); // 0x35
+user_pref("security.ssl3.rsa_aes_128_sha",			false); // 0x2f
+user_pref("security.ssl3.ecdhe_rsa_aes_256_sha",		false); // 0xc014
+user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha",		false); // 0xc00a
